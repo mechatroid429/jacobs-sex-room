@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacob's Sex Room – Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Simple slideshow script
+    let slideIndex = 0;
+    function showSlides() {
+      const slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    document.addEventListener("DOMContentLoaded", showSlides);
+  </script>
+</head>
+<body>
+
+  <!-- Sidebar navigation -->
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Jacob's Sex Room Logo" />
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About the Owner</a></li>
+      <li><a href="testimonials.html">Customer Testimonials</a></li>
+      <li><a href="gallery.html">Image Gallery</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+      <li><a href="toy_request.html">Toy Request</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome to Jacob's Sex Room</h1>
+    <p>
+      The most sophisticated, slick, and <em>ridiculously</em> funny playground for consenting adults, 
+      featuring top-tier vibes, luxurious amenities, and guaranteed laughs. 
+      Because if you're gonna spice things up, you might as well do it in style.
+    </p>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="room1.jpeg" alt="Room 1" />
+      </div>
+      <div class="mySlides fade">
+        <img src="room2.jpeg" alt="Room 2" />
+      </div>
+      <div class="mySlides fade">
+        <img src="room3.jpeg" alt="Room 3" />
+      </div>
+    </div>
+
+    <p>
+      Scroll through our images above for a quick peek into what awaits you. 
+      We don’t half-ass anything here—except maybe comedic commentary.
+    </p>
+  </div>
+</body>
+</html>
